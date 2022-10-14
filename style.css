@@ -12,6 +12,7 @@ body {
 
 /* ---------- Header section ---------- */
 #header {
+    margin-top: 0.4rem;
     width: 100%;
     height: 100vh;
     background-image: url("./images/background.png");
@@ -161,4 +162,41 @@ nav ul li a:hover::after {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+/* ---------- My Specialties section ----------  */
+#specialties {
+    padding: 30px 0; 
+}
+
+.specialties-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.specialties-list div {
+    background: #3c6382;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.specialties-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;   
+}
+
+.specialties-list h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.specialties-list div:hover {
+    background: #48dbfb;
+    transform: translateY(-10px);
 }
