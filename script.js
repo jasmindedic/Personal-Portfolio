@@ -13,3 +13,16 @@ function openTab(tabName) {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabName).classList.add("active-tab");
 }
+
+let sideMenu = document.querySelector("#sidemenu");
+
+function openmenu() {
+    sideMenu.style.right = "0";
+}
+
+function closemenu() {
+    sideMenu.style.right = "-200px";
+}
+
+
+// Google sheet contact 
