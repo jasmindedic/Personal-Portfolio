@@ -460,6 +460,11 @@ nav .fa-solid {
     }
 } 
 
+#msg {
+    color: #48dbfb;
+    margin-top: -40px;
+    display: block;
+}
 
 /* Webkit to hide scrollbar */
 ::-webkit-scrollbar {
