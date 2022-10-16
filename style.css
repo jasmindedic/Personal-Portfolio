@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     scroll-behavior: smooth;
-}
+  }
 
 body {
     background: #222f3e;
@@ -376,6 +378,13 @@ form .btn2 {
     color: #48dbfb;
 }
 
+/* Contact form */
+#msg {
+    color: #48dbfb;
+    margin-top: -40px;
+    display: block;
+}
+
 /* ---------- Css for small screen ---------- */
 nav .fa-solid {
     display: none;
@@ -471,11 +480,35 @@ nav .fa-solid {
     }
 }
 
-#msg {
-    color: #48dbfb;
-    margin-top: -40px;
-    display: block;
+/* Media query for extremely small devices */
+@media(max-width: 300px) {
+    .about-col-2 p {
+        font-size: 12px;
+    }
+
+    .specialties-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .specialties-list div {
+        padding: 40px;
+        font-size: 12px;
+    }
+    
+    .specialties-list div i {
+        font-size: 45px;
+    }
+    
+    .specialties-list h2 {
+        font-size: 26px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 }
+
+
 
 /* Webkit to hide scrollbar */
 ::-webkit-scrollbar {
